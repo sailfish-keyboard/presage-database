@@ -77,6 +77,19 @@ Categories:
   - Office
   - Dictionary
 
+%package fr_FR
+Summary:        Presage language support for French
+License:        CC-BY-SA-4.0
+
+%description fr_FR
+%{summary}.
+
+PackageName: Presage French
+Icon: https://raw.githubusercontent.com/sailfish-keyboard/presage/master/resources/presage.png
+Categories:
+  - Office
+  - Dictionary
+
 %package hu_HU
 Summary:        Presage language support for Hungarian
 License:        GPL-2.0 OR LGPL-2.1 OR MPL-1.1
@@ -152,6 +165,11 @@ cp -R databases/* $RPM_BUILD_ROOT%{_datadir}/presage
 %files fi_FI
 %defattr(-,root,root,-)
 %{_datadir}/presage/database_fi_FI
+
+
+%files fr_FR
+%defattr(-,root,root,-)
+%{_datadir}/presage/database_fr_FR
 
 
 %files hu_HU
